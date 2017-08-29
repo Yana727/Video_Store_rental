@@ -22,6 +22,8 @@ namespace Video_Store_rental
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+             services.AddDbContext<VideodbContext>();//restart after adding this line
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
