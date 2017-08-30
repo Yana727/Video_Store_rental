@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Video_Store_rental.Models;
 
 namespace Video_Store_rental
 {
@@ -22,7 +23,7 @@ namespace Video_Store_rental
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-             services.AddDbContext<VideodbContext>();//restart after adding this line
+            services.AddDbContext<VideodbContext>();//restart after adding this line
 
         }
 
